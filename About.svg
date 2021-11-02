@@ -1,0 +1,75 @@
+<svg width="128" height="27" viewBox="0 0 128 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="21.1852" y1="1.5" x2="10.5926" y2="1.5" stroke="white" stroke-width="2"/>
+<line x1="21.1852" y1="13.5" x2="10.5926" y2="13.5" stroke="white" stroke-width="2"/>
+<line x1="11.4074" y1="13.5" x2="0.814817" y2="13.5" stroke="white" stroke-width="2"/>
+<line x1="11.4074" y1="1.5" x2="0.814817" y2="1.5" stroke="white" stroke-width="2"/>
+<line x1="1.03703" y1="14" x2="1.03703" y2="1" stroke="white" stroke-width="2"/>
+<line x1="1.03703" y1="26" x2="1.03703" y2="13" stroke="white" stroke-width="2"/>
+<line x1="20.6741" y1="26" x2="20.6741" y2="13" stroke="white" stroke-width="2"/>
+<line x1="20.6741" y1="14" x2="20.6741" y2="1" stroke="white" stroke-width="2"/>
+<ellipse cx="1.22222" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="11" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="20.7778" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="20.7778" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="20.7778" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="11" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="1.22222" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="1.22222" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<line x1="37.8889" y1="1.5" x2="27.7778" y2="1.5" stroke="white"/>
+<line x1="37.8889" y1="2" x2="27.7778" y2="2" stroke="white" stroke-width="2"/>
+<line x1="37.8889" y1="14" x2="27.7778" y2="14" stroke="white" stroke-width="2"/>
+<line x1="37.8889" y1="26" x2="27.7778" y2="26" stroke="white" stroke-width="2"/>
+<line x1="47.2222" y1="26" x2="37.1111" y2="26" stroke="white" stroke-width="2"/>
+<line x1="27.9444" y1="14" x2="27.9444" y2="1" stroke="white" stroke-width="2"/>
+<line x1="28.0556" y1="26" x2="28.0556" y2="13" stroke="white"/>
+<line x1="36.8889" y1="14" x2="36.8889" y2="1" stroke="white" stroke-width="2"/>
+<line x1="27.9444" y1="26" x2="27.9444" y2="13" stroke="white" stroke-width="2"/>
+<line x1="46.2222" y1="26" x2="46.2222" y2="13" stroke="white" stroke-width="2"/>
+<ellipse cx="28.1667" cy="1.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="28.1667" cy="13.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="28.1667" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="37.5" cy="1.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<line x1="47.2222" y1="14" x2="37.1111" y2="14" stroke="white" stroke-width="2"/>
+<ellipse cx="46.8333" cy="13.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="37.5" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="46.8333" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="37.5" cy="13.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<line x1="64.4074" y1="2" x2="53.8148" y2="2" stroke="white" stroke-width="2"/>
+<line x1="64.4074" y1="26" x2="53.8148" y2="26" stroke="white" stroke-width="2"/>
+<line x1="74.1852" y1="26" x2="63.5926" y2="26" stroke="white" stroke-width="2"/>
+<line x1="74.1852" y1="2" x2="63.5926" y2="2" stroke="white" stroke-width="2"/>
+<line x1="53.6296" y1="14" x2="53.6296" y2="1" stroke="white" stroke-width="2"/>
+<line x1="73.1852" y1="14" x2="73.1852" y2="1" stroke="white" stroke-width="2"/>
+<line x1="73.1852" y1="26" x2="73.1852" y2="13" stroke="white" stroke-width="2"/>
+<line x1="53.6296" y1="26" x2="53.6296" y2="13" stroke="white" stroke-width="2"/>
+<ellipse cx="54.2222" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="64" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="73.7778" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="54.2222" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="54.2222" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="64" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="73.7778" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="73.7778" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<line x1="90.8889" y1="26" x2="80.7778" y2="26" stroke="white" stroke-width="2"/>
+<line x1="100.222" y1="26" x2="90.1111" y2="26" stroke="white" stroke-width="2"/>
+<line x1="80.5556" y1="14" x2="80.5556" y2="1" stroke="white" stroke-width="2"/>
+<line x1="80.5556" y1="26" x2="80.5556" y2="13" stroke="white" stroke-width="2"/>
+<line x1="99.2222" y1="26" x2="99.2222" y2="13" stroke="white" stroke-width="2"/>
+<ellipse cx="81.1667" cy="1.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="99.8333" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="90.5" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="81.1667" cy="25.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="81.1667" cy="13.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<line x1="99.2222" y1="14.0001" x2="99.2222" y2="1.00006" stroke="white" stroke-width="2"/>
+<ellipse cx="99.8333" cy="1.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="99.8333" cy="13.5" rx="1.16667" ry="1.5" fill="#C4C4C4"/>
+<path d="M117 26V13" stroke="white" stroke-width="2"/>
+<line x1="127.185" y1="2" x2="116.593" y2="2" stroke="white" stroke-width="2"/>
+<line x1="117.407" y1="2" x2="106.815" y2="2" stroke="white" stroke-width="2"/>
+<path d="M117 14V1" stroke="white" stroke-width="2"/>
+<ellipse cx="117" cy="13.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="117" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="107.222" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="126.778" cy="1.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+<ellipse cx="117" cy="25.5" rx="1.22222" ry="1.5" fill="#C4C4C4"/>
+</svg>

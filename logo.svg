@@ -1,0 +1,103 @@
+<svg width="281" height="27" viewBox="0 0 281 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="26" y1="2" x2="13" y2="2" stroke="white" stroke-width="2"/>
+<line x1="26" y1="14" x2="13" y2="14" stroke="white" stroke-width="2"/>
+<line x1="14" y1="2" x2="1" y2="2" stroke="white" stroke-width="2"/>
+<line x1="14" y1="26" x2="1" y2="26" stroke="white" stroke-width="2"/>
+<line x1="26" y1="26" x2="13" y2="26" stroke="white" stroke-width="2"/>
+<line x1="1" y1="14" x2="1" y2="1" stroke="white" stroke-width="2"/>
+<line x1="1" y1="26" x2="1" y2="13" stroke="white" stroke-width="2"/>
+<line x1="25" y1="26" x2="25" y2="13" stroke="white" stroke-width="2"/>
+<circle cx="1.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="13.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="25.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="25.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="25.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="13.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="13.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="1.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="1.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<line x1="53" y1="1.5" x2="40" y2="1.5" stroke="white"/>
+<line x1="53" y1="2" x2="40" y2="2" stroke="white" stroke-width="2"/>
+<line x1="65" y1="2" x2="52" y2="2" stroke="white" stroke-width="2"/>
+<line x1="53" y1="14" x2="40" y2="14" stroke="white" stroke-width="2"/>
+<line x1="53" y1="26" x2="40" y2="26" stroke="white" stroke-width="2"/>
+<line x1="65" y1="26" x2="52" y2="26" stroke="white" stroke-width="2"/>
+<line x1="40" y1="14" x2="40" y2="1" stroke="white" stroke-width="2"/>
+<line x1="40" y1="26" x2="40" y2="13" stroke="white" stroke-width="2"/>
+<circle cx="40.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="40.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="40.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="52.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="64.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="52.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="52.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="64.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<line x1="92" y1="2" x2="79" y2="2" stroke="white" stroke-width="2"/>
+<line x1="92" y1="26" x2="79" y2="26" stroke="white" stroke-width="2"/>
+<line x1="104" y1="26" x2="91" y2="26" stroke="white" stroke-width="2"/>
+<line x1="104" y1="2" x2="91" y2="2" stroke="white" stroke-width="2"/>
+<line x1="79" y1="14" x2="79" y2="1" stroke="white" stroke-width="2"/>
+<line x1="103" y1="14" x2="103" y2="1" stroke="white" stroke-width="2"/>
+<line x1="103" y1="26" x2="103" y2="13" stroke="white" stroke-width="2"/>
+<line x1="79" y1="26" x2="79" y2="13" stroke="white" stroke-width="2"/>
+<circle cx="79.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="91.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="103.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="79.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="79.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="91.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="103.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="103.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<line x1="118" y1="14" x2="118" y2="1" stroke="white" stroke-width="2"/>
+<line x1="118" y1="26" x2="118" y2="13" stroke="white" stroke-width="2"/>
+<line x1="142" y1="26" x2="142" y2="13" stroke="white" stroke-width="2"/>
+<line x1="142" y1="14" x2="142" y2="1" stroke="white" stroke-width="2"/>
+<line x1="129.607" y1="13.0208" x2="118.293" y2="1.70712" stroke="white" stroke-width="2"/>
+<line x1="142.607" y1="26.0208" x2="131.293" y2="14.7071" stroke="white" stroke-width="2"/>
+<circle cx="118.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="142.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="142.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="142.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="130.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="118.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="118.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<path d="M189.5 26V13" stroke="white" stroke-width="2"/>
+<circle cx="189.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<line x1="188.607" y1="13.7071" x2="177.293" y2="2.3934" stroke="white" stroke-width="2"/>
+<line x1="189.293" y1="13.2929" x2="200.607" y2="1.97918" stroke="white" stroke-width="2"/>
+<circle cx="177.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="189.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="201.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<line x1="229" y1="2" x2="216" y2="2" stroke="white" stroke-width="2"/>
+<line x1="229" y1="26" x2="216" y2="26" stroke="white" stroke-width="2"/>
+<line x1="241" y1="26" x2="228" y2="26" stroke="white" stroke-width="2"/>
+<line x1="241" y1="2" x2="228" y2="2" stroke="white" stroke-width="2"/>
+<line x1="216" y1="14" x2="216" y2="1" stroke="white" stroke-width="2"/>
+<line x1="240" y1="14" x2="240" y2="1" stroke="white" stroke-width="2"/>
+<line x1="240" y1="26" x2="240" y2="13" stroke="white" stroke-width="2"/>
+<line x1="216" y1="26" x2="216" y2="13" stroke="white" stroke-width="2"/>
+<circle cx="216.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="228.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="240.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="216.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="216.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="228.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="240.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="240.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<line x1="268" y1="2" x2="255" y2="2" stroke="white" stroke-width="2"/>
+<line x1="268" y1="26" x2="255" y2="26" stroke="white" stroke-width="2"/>
+<line x1="280" y1="26" x2="267" y2="26" stroke="white" stroke-width="2"/>
+<line x1="280" y1="2" x2="267" y2="2" stroke="white" stroke-width="2"/>
+<line x1="255" y1="14" x2="255" y2="1" stroke="white" stroke-width="2"/>
+<line x1="279" y1="14" x2="279" y2="1" stroke="white" stroke-width="2"/>
+<line x1="279" y1="26" x2="279" y2="13" stroke="white" stroke-width="2"/>
+<line x1="255" y1="26" x2="255" y2="13" stroke="white" stroke-width="2"/>
+<circle cx="255.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="267.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="279.5" cy="1.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="255.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="255.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="267.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="279.5" cy="25.5" r="1.5" fill="#C4C4C4"/>
+<circle cx="279.5" cy="13.5" r="1.5" fill="#C4C4C4"/>
+</svg>

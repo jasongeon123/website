@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: #121212;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans;
+    overflow-y:hidden;
+}
+h1{
+    color:white;
+    text-align:center;
+}
+h5{
+    color:white;
+    text-align:center;
+}
+#desc{
+    background-color:#1d1d1d;
+
+}
+#mypic{
+    width:10%;
+    height:10%;
+    position:relative;
+    border-radius: 50%;
+}
+#logo{
+    padding:23px;
+    color:white;
+    font-size:30px;
+    float:left;
+    font-family: ProximaBold;
+}
+#particles-js #home{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:20%;
+    background-color:#121212;
+}
+#particles-js{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background: #121212;
+}
+header{
+    background:#000000;
+    position:fixed;
+    width:100%;
+    z-index:1;
+}
+nav{
+    float:right;
+    display:block;
+}
+.navop{
+    width:100px;
+    height:auto;
+}
+#project{
+    width:120px;
+    height:auto;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display:inline-block;
+    position: relative;
+    padding: 12px;
+    margin-right:10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+nav a:hover{
+    color:#9C9C9C;
+}
+
+nav a:after{
+    content:'';
+    display:block;
+    height:3px;
+    width:0%;
+    background-color:#9C9C9C;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@media screen and (max-width:1000px) {
+    .box{
+        left:30%;
+    }
+    nav li{
+        margin-left:7px;
+    }
+    nav a{
+        font-size:14px;
+    }
+
+}
