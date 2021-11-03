@@ -1,1 +1,1 @@
-Hello this is my personal website and it can be found at http://www.geonyoo.com. It is currently under construction, but I just wanted to start something for now, but I am working on adding more functionality. Thank you.
+Hello this is my personal website and it can be found at http://www.geonyoo.com. It is currently under construction, but I just wanted to start something for now, but I am working on adding more functionality. 
