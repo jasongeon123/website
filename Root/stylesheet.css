@@ -1,119 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*Html Default Css*/
 html{
     scroll-behavior: smooth;
-}
-body{
-    margin:0;
-    padding: 0;
-    background-color: #121212;
-    font-family:'Helvetica Neue',Helvetica,Arial,sans;
     overflow-y:hidden;
-}
-h1{
-    color:white;
-    text-align:center;
-}
-h5{
-    color:white;
-    text-align:center;
-}
-#desc{
-    background-color:#1d1d1d;
-
-}
-#mypic{
-    width:10%;
-    height:10%;
-    position:relative;
-    border-radius: 50%;
-}
-#logo{
-    padding:23px;
-    color:white;
-    font-size:30px;
-    float:left;
-    font-family: ProximaBold;
-}
-#particles-js #home{
-    position:absolute;
-    top:0;
-    bottom:0;
-    margin:auto;
-    width:20%;
-    background-color:#121212;
-}
-#particles-js{
-    display:flex;
-    justify-content:center;
-    position:relative;
     width: 100%;
     height: 100%;
-    background: #121212;
 }
-header{
-    background:#000000;
-    position:fixed;
-    width:100%;
-    z-index:1;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-nav{
-    float:right;
-    display:block;
+body{
+    width: 100%;
+    height: 100%;
 }
-.navop{
-    width:100px;
-    height:auto;
+.maxWidth{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
-#project{
-    width:120px;
-    height:auto;
-}
-nav ul{
-    list-style-type: none;
-}
-nav li{
-    display:inline-block;
-    position: relative;
-    padding: 12px;
-    margin-right:10px;
+.menuButton{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
 }
 
-nav a{
-    text-decoration:none;
-    color:white;
-    font-size:20px;
+/* Navbar CSS*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
-nav a:hover{
-    color:#9C9C9C;
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
 }
-
-nav a:after{
+.navbar .maxWidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar #logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar #logo a span{
+    color: #556DC8;
+    transition: all 0.3s ease;
+}
+.navbar.sticky #logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #556DC8;
+}
+.navbar .menu li a:after{
     content:'';
     display:block;
     height:3px;
     width:0%;
-    background-color:#9C9C9C;
+    background-color:#556DC8;
     transition: all ease-in-out 200ms;
 }
-
-nav a:hover::after{
+.navbar .menu li a:hover::after{
     width:100%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-@media screen and (max-width:1000px) {
-    .box{
-        left:30%;
-    }
-    nav li{
-        margin-left:7px;
-    }
-    nav a{
-        font-size:14px;
-    }
+/*Particles and Home*/
 
+#particles-js{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    background: #121212 no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family:'Ubuntu', sans-serif;
+    color:white;
+    position: relative;
 }
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+#particles-js .max-width{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 100%;
+}
+#particles-js .max-width .row{
+  margin-right: 0;
+}
+#particles-js .home-content .text-1{
+    font-size: 27px;
+}
+#particles-js .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+#particles-js .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+#particles-js .home-content .text-3 span{
+    color: #556DC8;
+    font-weight: 500;
+}
+
