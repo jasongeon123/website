@@ -15,9 +15,9 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing", {
-        strings: ["Gamer", "Developer", "Student", "Designer", "Wonderer"],
-        typeSpeed: 200,
-        backSpeed: 100,
+        strings: ["Gamer", "Developer", "Student", "Designer", "Golfer"],
+        typeSpeed: 130,
+        backSpeed: 75,
         loop: true
     });
 });

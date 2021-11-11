@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 *{
     margin: 0px;
@@ -39,7 +40,7 @@ body{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: black;
+    background: #121212;
 }
 .navbar .maxWidth{
     display: flex;
@@ -113,6 +114,7 @@ section{
     top: 40%;
     left: 5%;
     width: 100%;
+    max-width: 600px;
 }
 #particles-js .maxWidth .row{
   margin-right: 0;
@@ -137,7 +139,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -184,7 +186,7 @@ section .title{
     border-radius: 6px;
 }
 .about-content .right{
-    width: 60%;
+    width: 55%;
 }
 .about-content .right .text{
     font-size: 25px;
@@ -196,3 +198,118 @@ section .title{
     text-align: justify;
 }
 
+
+
+.skills .title::before{
+    background:white;
+}
+.skills .title::after{
+    content: "what I know";
+    background:#121212;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+    background:#121212;
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #556DC8;
+}
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .php::before{
+    width: 40%;
+}
+.skills-content .right .mysql::before{
+    width: 40%;
+}
+.skills{
+    background:#121212;
+    color:white;
+}
+
+.projects{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    background: white;
+}
+.projects .title::before{
+    background: black;
+}
+.projects .title::after{
+    background: white;
+    content: "what i have done";
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: rgb(243, 243, 243);
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover{
+    background: #556DC8;
+}
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: #556DC8;
+    transition: color 0.3s ease;
+}
+.projects .serv-content .card:hover i{
+    color: #fff;
+}
+.projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+a {
+    color:black;
+}
