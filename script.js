@@ -16,8 +16,8 @@ $(document).ready(function(){
 
     var typed = new Typed(".typing", {
         strings: ["Gamer", "Developer", "Student", "Designer", "Wonderer"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        typeSpeed: 200,
+        backSpeed: 100,
         loop: true
     });
 });
