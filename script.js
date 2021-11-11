@@ -20,4 +20,6 @@ $(document).ready(function(){
         backSpeed: 75,
         loop: true
     });
+
+    
 });
