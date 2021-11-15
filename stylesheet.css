@@ -199,6 +199,23 @@ section .title{
     text-align: justify;
 }
 
+.about .about-content .right a{
+    display: inline-block;
+    background: #556DC8;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #556DC8;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: #556DC8;
+    background: none;
+}
+
 
 
 .skills .title::before{
