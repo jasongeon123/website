@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Website Portfolio</title>
         <link rel="shortcut icon" type="image/jpg" href="Images/headshots.jpg"/>
@@ -11,10 +11,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <script src="script.js"></script>
     </head>
     <body>
+        <!--Navbar things--->
         <div class="scroll-up-btn">
             <i class="fas fa-angle-up"></i>
         </div>
@@ -36,7 +37,7 @@
         </nav>
 
         <!---Landing Page-->
-        <section class="home" id="home">
+        <div class="home" id="home">
             <div id="particles-js">
                 <div class="maxWidth">
                     <div class="home-content">
@@ -46,10 +47,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--About me Section-->
-        <div class="about" id="about">
+        <section class="about" id="about">
             <div class="maxWidth">
                 <div class ="title">About me</div>
                 <div class="about-content">
@@ -63,7 +64,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <section class="skills" id="skills">
             <div class="maxWidth">
@@ -143,6 +144,7 @@
                             <p>Used Tensorflow to feed a supervised learning model labeled data to determine if headline was satire or not and tweet it out. Used Python (Tweepy) and Tensorflow.</p>
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
         </section>
@@ -154,7 +156,7 @@
                     <div class="card">
                         <a href="https://www.gokloak.com/">
                             <div class="box">
-                                <img src = "./Images/kloaklogo.png" class="companylogo" alt="">
+                                <img src = "./Images/kloaklogo.png" class="companylogo">
                                 <div class="text">Kloak</div>
                                 <div class="text2">Software Engineer</div>
                                 <br>
@@ -168,7 +170,7 @@
                     <div class="card">
                         <a href="https://www.avation.com/">
                             <div class="box">
-                                <img src = "./Images/avationlogo.png" class="companylogo" alt="">
+                                <img src = "./Images/avationlogo.png" class="companylogo">
                                 <div class="text">Avation Medical</div>
                                 <div class="text2">R&D Intern</div>
                                 <br>
@@ -184,7 +186,7 @@
                     <div class="card">
                         <div class="box">
                             <a href="https://www.santa-clarita.com/">
-                                <img src = "./Images/s-l500.jpg" class="companylogo" alt="">
+                                <img src = "./Images/s-l500.jpg" class="companylogo">
                                 <div class="text">Santa Clarita City Hall</div>
                                 <div class="text2">Civil Engineer Intern</div>
                                 <br>
