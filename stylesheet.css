@@ -123,17 +123,22 @@ section{
     font-size: 27px;
 }
 #particles-js .home-content .text2{
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 600;
     margin-left: -3px;
 }
 #particles-js .home-content .text3{
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 0;
 }
 #particles-js .home-content .text3 span{
     color: #556DC8;
     font-weight: 500;
+}
+#particles-js .mypic{
+    width:140%;
+    margin-left:200%;
+    margin-top:-85%;
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -345,6 +350,7 @@ a {
     content: "Professional Experience";
     background:#121212;
 }
+
 .experience .serv-content .card{
     width: calc(33% - 20px);
     background: rgb(199, 199, 199);
@@ -644,6 +650,7 @@ a {
 @media (max-width: 500px) {
     html{
         overflow-x: hidden;
+        max-width:500px;
     }
     .maxWidth{
         max-width:490px;
@@ -682,5 +689,8 @@ a {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    #particles-js .mypic{
+        width: 0%;
     }
 }
