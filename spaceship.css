@@ -16,7 +16,9 @@ html{
 body{
     width: 100%;
     height: 100%;
+    background-color:#333;
 }
+
 .maxWidth{
     max-width: 1300px;
     padding: 0 80px;
@@ -29,10 +31,6 @@ body{
     display: none;
 }
 
-img{
-    width:10%;
-    height:20%;
-}
 /* Navbar CSS*/
 .navbar{
     position: fixed;
@@ -63,47 +61,11 @@ img{
 .navbar.sticky #logo a span{
     color: #fff;
 }
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: #556DC8;
-}
-.navbar .menu li a:after{
-    content:'';
-    display:block;
-    height:3px;
-    width:0%;
-    background-color:#556DC8;
-    transition: all ease-in-out 200ms;
-}
-.navbar .menu li a:hover::after{
-    width:100%;
-}
+
 
 /*Particles and Home*/
 
-#particles-js{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    min-height: 500px;
-    background: #121212 no-repeat center;
-    background-size: cover;
-    background-attachment:fixed;
-    font-family:'Ubuntu', sans-serif;
-    color:white;
-    position: relative;
-}
+
 section{
     padding: 100px 0;
 }
@@ -111,6 +73,26 @@ section{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+
+#mockup {
+    width:536.5px;
+    height:485px;
+}
+
+#figmaMockup{
+    width:554px;
+    height:449px;
+}
+
+#basicMockup{
+    width:306px;
+    height:552px;
+}
+
+#finalMockup{
+    width:421px;
+    height:485px;
 }
 
 #particles-js .maxWidth{
@@ -226,12 +208,12 @@ section .title{
     background:white;
 }
 .skills .title::after{
-    content: "what I know";
-    background:#121212;
+    content: "Design Process";
+    background:#252525;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
-    background:#121212;
+    background:#252525;
 }
 .skills .skills-content .left .text{
     font-size: 20px;
@@ -258,7 +240,7 @@ section .title{
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: #252525;
     position: relative;
 }
 .skills .skills-content .right .line::before{
@@ -285,7 +267,7 @@ section .title{
     width: 40%;
 }
 .skills{
-    background:#121212;
+    background: #252525;
     color:white;
 }
 
