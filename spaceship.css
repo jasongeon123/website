@@ -95,6 +95,38 @@ section{
     height:485px;
 }
 
+#storyboard1{
+    width: 290px;
+    height: 180px;
+}
+
+#storyboard2{
+    width:185px;
+    height: 240px;
+}
+
+#storyboard3{
+    width:185px;
+    height:240px;
+}
+#storyboard4{
+    width:185px;
+    height: 240px;
+    margin-right: 100px;
+}
+#storyboard5{
+    width:400px;
+    height: 300px;
+}
+
+#storyboard7{
+    width:200px;
+}
+
+#link{
+    color:white;
+}
+
 #particles-js .maxWidth{
     position: absolute;
     top: 40%;
@@ -212,7 +244,6 @@ section .title{
     background:#252525;
 }
 .skills .skills-content .column{
-    width: calc(50% - 30px);
     background:#252525;
 }
 .skills .skills-content .left .text{
