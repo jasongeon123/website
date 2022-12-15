@@ -384,9 +384,6 @@ a {
     border: 5px solid #556DC8;
     transition: all 0.3s ease;
 }
-
-
-
 .contact .title::after{
     content: "get in touch";
 }
