@@ -35,12 +35,11 @@ export default function ScrollReveal({
             setTimeout(() => {
               element.classList.add("revealed");
             }, delay);
-          } else {
-            element.classList.remove("revealed");
+            observer.unobserve(section);
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.4 }
     );
 
     observer.observe(section);
