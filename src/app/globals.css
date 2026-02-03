@@ -171,15 +171,14 @@ body {
   position: fixed;
   width: 100%;
   z-index: 9998;
-  padding: 25px 0;
+  padding: 20px 0;
   font-family: 'Inter', sans-serif;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
   background: var(--bg-dark);
 }
 
 .navbar.sticky {
-  padding: 15px 0;
-  background: rgba(15, 15, 15, 0.9);
+  background: rgba(15, 15, 15, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
 }
