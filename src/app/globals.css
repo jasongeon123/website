@@ -1333,19 +1333,19 @@ footer {
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-dark: #d8d8d8;
-  --bg-section: #d0d0d0;
-  --bg-card: #e8e8e8;
-  --bg-card-hover: #e0e0e0;
+  --bg-dark: #f0f0f0;
+  --bg-section: #e8e8e8;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f5f5f5;
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #666666;
-  --border-subtle: rgba(0, 0, 0, 0.12);
+  --border-subtle: rgba(0, 0, 0, 0.1);
 }
 
 html[data-theme="light"],
 html[data-theme="light"] body {
-  background: #d8d8d8;
+  background: #f0f0f0;
 }
 
 /* Light mode backgrounds - transparent so clouds show through */
@@ -1356,8 +1356,8 @@ html[data-theme="light"] body {
 [data-theme="light"] .experience { background: transparent; }
 [data-theme="light"] .contact { background: transparent; }
 [data-theme="light"] footer { background: transparent; }
-[data-theme="light"] .navbar { background: rgba(216, 216, 216, 0.8); backdrop-filter: blur(10px); }
-[data-theme="light"] .navbar.sticky { background: rgba(216, 216, 216, 0.9); backdrop-filter: blur(20px); }
+[data-theme="light"] .navbar { background: rgba(240, 240, 240, 0.8); backdrop-filter: blur(10px); }
+[data-theme="light"] .navbar.sticky { background: rgba(240, 240, 240, 0.9); backdrop-filter: blur(20px); }
 
 [data-theme="light"] #tsparticles {
   display: none;
