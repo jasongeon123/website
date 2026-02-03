@@ -1329,10 +1329,10 @@ footer {
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-dark: rgba(232, 232, 232, 0.85);
-  --bg-section: rgba(222, 222, 222, 0.85);
-  --bg-card: rgba(240, 240, 240, 0.9);
-  --bg-card-hover: rgba(228, 228, 228, 0.95);
+  --bg-dark: #e8e8e8;
+  --bg-section: #dedede;
+  --bg-card: #f0f0f0;
+  --bg-card-hover: #e4e4e4;
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #666666;
@@ -1347,7 +1347,7 @@ footer {
 [data-theme="light"] .home,
 [data-theme="light"] section,
 [data-theme="light"] footer {
-  background: var(--bg-dark);
+  background: #e8e8e8;
   position: relative;
   z-index: 2;
 }
