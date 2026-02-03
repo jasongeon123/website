@@ -1329,10 +1329,10 @@ footer {
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-dark: rgba(200, 200, 200, 0.75);
-  --bg-section: rgba(190, 190, 190, 0.75);
-  --bg-card: rgba(220, 220, 220, 0.9);
-  --bg-card-hover: rgba(210, 210, 210, 0.95);
+  --bg-dark: #d8d8d8;
+  --bg-section: #d0d0d0;
+  --bg-card: #e8e8e8;
+  --bg-card-hover: #e0e0e0;
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #666666;
@@ -1341,28 +1341,7 @@ footer {
 
 [data-theme="light"] html,
 [data-theme="light"] body {
-  background: #c0c0c0;
-}
-
-[data-theme="light"] .home,
-[data-theme="light"] .about,
-[data-theme="light"] .projects,
-[data-theme="light"] .skills,
-[data-theme="light"] .experience,
-[data-theme="light"] .contact,
-[data-theme="light"] footer {
-  background: transparent !important;
-  position: relative;
-  z-index: 2;
-}
-
-[data-theme="light"] .navbar,
-[data-theme="light"] .navbar.sticky {
-  background: rgba(200, 200, 200, 0.75);
-}
-
-[data-theme="light"] .navbar .menu {
-  background: rgba(200, 200, 200, 0.85);
+  background: #c8c8c8;
 }
 
 [data-theme="light"] #tsparticles {
