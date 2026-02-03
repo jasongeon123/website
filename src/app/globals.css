@@ -928,7 +928,15 @@ footer {
 }
 
 .footer-content a:hover {
-  color: var(--primary);
+  color: var(--accent);
+}
+
+[data-theme="light"] .footer-content a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="light"] .footer-content a:hover {
+  color: var(--accent);
 }
 
 /* Scrollbar */
