@@ -1344,14 +1344,10 @@ footer {
   background: #d0d0d0;
 }
 
+[data-theme="light"] .home,
 [data-theme="light"] section,
 [data-theme="light"] footer {
-  position: relative;
-  z-index: 2;
-}
-
-[data-theme="light"] .home {
-  background: rgba(232, 232, 232, 0.85);
+  background: var(--bg-dark);
   position: relative;
   z-index: 2;
 }
