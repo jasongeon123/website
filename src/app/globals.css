@@ -1356,8 +1356,9 @@ html[data-theme="light"] body {
 [data-theme="light"] .experience { background: transparent; }
 [data-theme="light"] .contact { background: transparent; }
 [data-theme="light"] footer { background: transparent; }
-[data-theme="light"] .navbar { background: transparent; }
-[data-theme="light"] .navbar.sticky { background: rgba(248, 248, 248, 0.7); backdrop-filter: blur(20px); }
+[data-theme="light"] .navbar { background: transparent !important; }
+[data-theme="light"] .navbar.sticky { background: rgba(248, 248, 248, 0.7) !important; backdrop-filter: blur(20px); }
+[data-theme="light"] .navbar .menu { background: rgba(248, 248, 248, 0.98); }
 
 [data-theme="light"] #tsparticles {
   display: none;
