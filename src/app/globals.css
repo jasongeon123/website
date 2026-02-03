@@ -1344,6 +1344,17 @@ footer {
   background: #c8c8c8;
 }
 
+/* Light mode backgrounds - explicit for each section */
+[data-theme="light"] .home { background: #d8d8d8; }
+[data-theme="light"] .about { background: #d8d8d8; }
+[data-theme="light"] .projects { background: #d8d8d8; }
+[data-theme="light"] .skills { background: #d8d8d8; }
+[data-theme="light"] .experience { background: #d8d8d8; }
+[data-theme="light"] .contact { background: #d8d8d8; }
+[data-theme="light"] footer { background: #d8d8d8; }
+[data-theme="light"] .navbar { background: #d8d8d8; }
+[data-theme="light"] .navbar.sticky { background: #d8d8d8; }
+
 [data-theme="light"] #tsparticles {
   display: none;
 }
