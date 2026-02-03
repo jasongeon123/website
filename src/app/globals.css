@@ -1329,10 +1329,10 @@ footer {
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-dark: #e8e8e8;
-  --bg-section: #dedede;
-  --bg-card: #f0f0f0;
-  --bg-card-hover: #e4e4e4;
+  --bg-dark: rgba(200, 200, 200, 0.75);
+  --bg-section: rgba(190, 190, 190, 0.75);
+  --bg-card: rgba(220, 220, 220, 0.9);
+  --bg-card-hover: rgba(210, 210, 210, 0.95);
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #666666;
@@ -1341,13 +1341,13 @@ footer {
 
 [data-theme="light"] html,
 [data-theme="light"] body {
-  background: #d0d0d0;
+  background: #c0c0c0;
 }
 
 [data-theme="light"] .home,
 [data-theme="light"] section,
 [data-theme="light"] footer {
-  background: #e8e8e8;
+  background: rgba(200, 200, 200, 0.75);
   position: relative;
   z-index: 2;
 }
