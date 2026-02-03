@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section className="experience" id="experience">
       <div className="maxWidth">
-        <div className="title">My Job Experience</div>
+        <h2 className="title">My Job Experience</h2>
 
         <div className="serv-content">
           {experiences.map((exp, i) => (

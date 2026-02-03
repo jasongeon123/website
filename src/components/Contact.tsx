@@ -51,7 +51,7 @@ export default function Contact() {
   return (
     <section className="contact" id="contact">
       <div className="maxWidth">
-        <div className="title">Contact Me</div>
+        <h2 className="title">Contact Me</h2>
 
         <div className="contact-content">
           <div className="column left">

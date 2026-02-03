@@ -63,7 +63,7 @@ export default function Hero() {
           )}
 
           <div className="text1">Hello, my name is</div>
-          <div className="text2">{personalInfo.name}</div>
+          <h1 className="text2">{personalInfo.name}</h1>
           <div className="text3">
             And I&apos;m a <span ref={typedRef}></span>
           </div>

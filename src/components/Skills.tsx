@@ -39,7 +39,7 @@ export default function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="maxWidth">
-        <div className="title">My Skills</div>
+        <h2 className="title">My Skills</h2>
 
         <div className="skills-content">
           <ScrollReveal animation="fade-left">

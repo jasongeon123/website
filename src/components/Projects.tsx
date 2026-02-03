@@ -35,7 +35,7 @@ export default function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="maxWidth">
-        <div className="title">Projects</div>
+        <h2 className="title">Projects</h2>
 
         <div className="serv-content">
           {projects.map((project, i) => {

@@ -5,7 +5,7 @@ export default function Education() {
   return (
     <section className="education" id="education">
       <div className="maxWidth">
-        <div className="title">Education</div>
+        <h2 className="title">Education</h2>
 
         <div className="education-content">
           {education.map((edu, index) => (

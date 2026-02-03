@@ -9,7 +9,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="maxWidth">
         <ScrollReveal animation="fade-up">
-          <div className="title">About Me</div>
+          <h2 className="title">About Me</h2>
         </ScrollReveal>
 
         <div className="about-content">
