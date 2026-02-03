@@ -236,7 +236,7 @@ body {
   background: var(--bg-dark);
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
-  position: relative;
+  z-index: 1;
   scroll-snap-align: start;
 }
 
@@ -287,6 +287,8 @@ body {
 section {
   padding: 120px 0;
   scroll-snap-align: start;
+  position: relative;
+  z-index: 1;
 }
 
 /* Section Titles */
@@ -911,6 +913,8 @@ footer {
   color: var(--text-muted);
   font-size: 14px;
   border-top: 1px solid var(--border-subtle);
+  position: relative;
+  z-index: 1;
 }
 
 .footer-content {
@@ -1339,9 +1343,9 @@ footer {
   --border-subtle: rgba(0, 0, 0, 0.12);
 }
 
-[data-theme="light"] html,
-[data-theme="light"] body {
-  background: #c8c8c8;
+html[data-theme="light"],
+html[data-theme="light"] body {
+  background: #d8d8d8;
 }
 
 /* Light mode backgrounds - explicit for each section */
@@ -1369,7 +1373,7 @@ footer {
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 [data-theme="light"] .clouds-container {
