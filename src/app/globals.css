@@ -173,6 +173,7 @@ body {
   padding: 25px 0;
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
+  background: var(--bg-dark);
 }
 
 .navbar.sticky {
@@ -235,8 +236,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
   position: relative;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .home .maxWidth {
