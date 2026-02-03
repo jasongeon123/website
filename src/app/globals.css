@@ -948,8 +948,7 @@ footer {
   height: 50px;
   width: 50px;
   background: var(--accent);
-  left: 50%;
-  margin-left: -25px;
+  right: 30px;
   bottom: 30px;
   display: flex;
   align-items: center;
