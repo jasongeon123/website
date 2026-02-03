@@ -221,11 +221,13 @@ body {
 
 /* Particles and Home */
 #tsparticles {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .home {
@@ -233,7 +235,7 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background: var(--bg-dark);
+  background: transparent;
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
   z-index: 1;
@@ -317,7 +319,7 @@ section .title {
 
 /* About */
 .about {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -376,7 +378,7 @@ section .title {
 
 /* Skills */
 .skills {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
   padding: 120px 0;
 }
@@ -501,7 +503,7 @@ section .title {
 
 /* Projects */
 .projects {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -667,7 +669,7 @@ a {
 
 /* Experience */
 .experience {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -742,7 +744,7 @@ a {
 
 /* Contact */
 .contact {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -907,7 +909,7 @@ a {
 
 /* Footer */
 footer {
-  background: var(--bg-dark);
+  background: transparent;
   padding: 30px 0;
   text-align: center;
   color: var(--text-muted);
@@ -1860,7 +1862,7 @@ html[data-theme="light"] body {
 
 /* Education Section */
 .education {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -1917,7 +1919,7 @@ html[data-theme="light"] body {
 
 /* Testimonials Section */
 .testimonials {
-  background: var(--bg-dark);
+  background: transparent;
   border-top: 1px solid var(--border-subtle);
 }
 
