@@ -80,9 +80,12 @@ export default function Hero() {
             </a>
           </div>
 
-          <a href="#contact" className="cta-button">
+          <button
+            className="cta-button"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+          >
             Let&apos;s Work Together
-          </a>
+          </button>
         </div>
       </div>
     </section>
