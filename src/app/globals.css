@@ -377,7 +377,11 @@ section .title {
 .skills {
   background: var(--bg-dark);
   border-top: 1px solid var(--border-subtle);
-  padding: 80px 0;
+  padding: 120px 0;
+}
+
+.skills .title {
+  margin-bottom: 60px;
 }
 
 .skills .skills-content {
