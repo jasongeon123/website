@@ -141,7 +141,7 @@ html {
   height: 100%;
   overflow-x: hidden;
   background: #0f0f0f;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 * {
