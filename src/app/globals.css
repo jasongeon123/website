@@ -175,11 +175,11 @@ body {
   padding: 20px 0;
   font-family: 'Inter', sans-serif;
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
-  background: var(--bg-dark);
+  background: transparent;
 }
 
 .navbar.sticky {
-  background: rgba(15, 15, 15, 0.95);
+  background: rgba(15, 15, 15, 0.7);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -1333,19 +1333,19 @@ footer {
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-dark: #f0f0f0;
-  --bg-section: #e8e8e8;
+  --bg-dark: #f8f8f8;
+  --bg-section: #f5f5f5;
   --bg-card: #ffffff;
-  --bg-card-hover: #f5f5f5;
+  --bg-card-hover: #fafafa;
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #666666;
-  --border-subtle: rgba(0, 0, 0, 0.1);
+  --border-subtle: rgba(0, 0, 0, 0.08);
 }
 
 html[data-theme="light"],
 html[data-theme="light"] body {
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 
 /* Light mode backgrounds - transparent so clouds show through */
@@ -1356,8 +1356,8 @@ html[data-theme="light"] body {
 [data-theme="light"] .experience { background: transparent; }
 [data-theme="light"] .contact { background: transparent; }
 [data-theme="light"] footer { background: transparent; }
-[data-theme="light"] .navbar { background: rgba(240, 240, 240, 0.8); backdrop-filter: blur(10px); }
-[data-theme="light"] .navbar.sticky { background: rgba(240, 240, 240, 0.9); backdrop-filter: blur(20px); }
+[data-theme="light"] .navbar { background: transparent; }
+[data-theme="light"] .navbar.sticky { background: rgba(248, 248, 248, 0.7); backdrop-filter: blur(20px); }
 
 [data-theme="light"] #tsparticles {
   display: none;
