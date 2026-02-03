@@ -1345,9 +1345,13 @@ footer {
 }
 
 [data-theme="light"] .home,
-[data-theme="light"] section,
+[data-theme="light"] .about,
+[data-theme="light"] .projects,
+[data-theme="light"] .skills,
+[data-theme="light"] .experience,
+[data-theme="light"] .contact,
 [data-theme="light"] footer {
-  background: rgba(200, 200, 200, 0.75);
+  background: rgba(200, 200, 200, 0.75) !important;
   position: relative;
   z-index: 2;
 }
