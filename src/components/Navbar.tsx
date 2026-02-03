@@ -5,12 +5,12 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Skills", href: "#skills" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", id: "home" },
+  { name: "About", id: "about" },
+  { name: "Projects", id: "projects" },
+  { name: "Skills", id: "skills" },
+  { name: "Experience", id: "experience" },
+  { name: "Contact", id: "contact" },
 ];
 
 export default function Navbar() {
@@ -23,11 +23,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  function scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
+  }
+
   return (
     <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
       <div className="maxWidth">
         <div id="logo">
-          <a href="#home">
+          <a onClick={() => scrollTo("home")} style={{ cursor: "pointer" }}>
             &lt;<span>GY</span> /&gt;
           </a>
         </div>
@@ -35,7 +41,7 @@ export default function Navbar() {
         <ul className={`menu ${menuOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} onClick={() => setMenuOpen(false)}>
+              <a onClick={() => scrollTo(link.id)} style={{ cursor: "pointer" }}>
                 {link.name}
               </a>
             </li>
