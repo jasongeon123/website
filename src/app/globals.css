@@ -1350,6 +1350,10 @@ footer {
   z-index: 2;
 }
 
+[data-theme="light"] .home {
+  background: rgba(210, 210, 210, 0.95);
+}
+
 [data-theme="light"] .navbar.sticky {
   background: rgba(232, 232, 232, 0.9);
 }
