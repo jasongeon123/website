@@ -140,7 +140,6 @@ html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 * {
@@ -286,8 +285,6 @@ body {
 /* Sections */
 section {
   padding: 120px 0;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 /* Section Titles */
@@ -912,7 +909,6 @@ footer {
   color: var(--text-muted);
   font-size: 14px;
   border-top: 1px solid var(--border-subtle);
-  scroll-snap-align: end;
 }
 
 .footer-content {
