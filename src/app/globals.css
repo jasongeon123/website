@@ -226,7 +226,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -238,7 +238,6 @@ body {
   background: transparent;
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
-  z-index: 1;
   scroll-snap-align: start;
 }
 
@@ -290,7 +289,6 @@ section {
   padding: 120px 0;
   scroll-snap-align: start;
   position: relative;
-  z-index: 1;
 }
 
 /* Section Titles */
@@ -916,7 +914,6 @@ footer {
   font-size: 14px;
   border-top: 1px solid var(--border-subtle);
   position: relative;
-  z-index: 1;
 }
 
 .footer-content {
