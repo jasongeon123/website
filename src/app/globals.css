@@ -1352,12 +1352,13 @@ footer {
   z-index: 2;
 }
 
+[data-theme="light"] .navbar,
 [data-theme="light"] .navbar.sticky {
-  background: rgba(232, 232, 232, 0.9);
+  background: rgba(200, 200, 200, 0.75);
 }
 
 [data-theme="light"] .navbar .menu {
-  background: rgba(232, 232, 232, 0.95);
+  background: rgba(200, 200, 200, 0.85);
 }
 
 [data-theme="light"] #tsparticles {
