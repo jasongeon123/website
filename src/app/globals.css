@@ -141,6 +141,7 @@ html {
   height: 100%;
   overflow-x: hidden;
   background: #0f0f0f;
+  scroll-snap-type: y proximity;
 }
 
 * {
@@ -236,6 +237,7 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
   position: relative;
+  scroll-snap-align: start;
 }
 
 .home .maxWidth {
@@ -284,6 +286,7 @@ body {
 /* Sections */
 section {
   padding: 120px 0;
+  scroll-snap-align: start;
 }
 
 /* Section Titles */
