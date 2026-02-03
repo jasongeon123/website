@@ -1351,7 +1351,7 @@ footer {
 [data-theme="light"] .experience,
 [data-theme="light"] .contact,
 [data-theme="light"] footer {
-  background: rgba(200, 200, 200, 0.75) !important;
+  background: transparent !important;
   position: relative;
   z-index: 2;
 }
