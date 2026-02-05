@@ -13,20 +13,22 @@ import Terminal from "@/components/Terminal";
 
 export default function Home() {
   return (
-    <Preloader>
-      <main>
-        <Clouds />
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-        <Footer />
-        <SectionNavigator />
-        <Terminal />
-      </main>
-    </Preloader>
+    <>
+      <Preloader>
+        <main>
+          <Clouds />
+          <Navbar />
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Contact />
+          <Footer />
+          <SectionNavigator />
+        </main>
+      </Preloader>
+      <Terminal />
+    </>
   );
 }

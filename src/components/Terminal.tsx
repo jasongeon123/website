@@ -69,20 +69,24 @@ export default function Terminal() {
   const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
   useEffect(() => {
-    const SEQUENCE = ["-", "+", "-", "+"];
+    // Sequence: minus, plus, minus, plus (-, =, -, =)
+    const SEQUENCE = ["m", "p", "m", "p"];
 
     function handleKey(e: KeyboardEvent) {
       const tag = (e.target as HTMLElement).tagName;
       if (tag === "TEXTAREA") return;
-      // Allow terminal's own input but block other page inputs
       if (tag === "INPUT" && !(e.target as HTMLElement).classList.contains("terminal-input")) return;
 
-      if (e.key === "-" || e.key === "+" || e.key === "=") {
-        const key = e.key === "=" ? "+" : e.key;
-        keysRef.current.push(key);
+      // Map both e.code and e.key to detect minus/plus reliably
+      const isMinus = e.code === "Minus" || e.key === "-" || e.key === "_";
+      const isPlus = e.code === "Equal" || e.key === "+" || e.key === "=";
+
+      if (isMinus || isPlus) {
+        e.preventDefault();
+        keysRef.current.push(isMinus ? "m" : "p");
 
         if (timerRef.current) clearTimeout(timerRef.current);
-        timerRef.current = setTimeout(() => { keysRef.current = []; }, 1500);
+        timerRef.current = setTimeout(() => { keysRef.current = []; }, 2000);
 
         if (keysRef.current.length >= SEQUENCE.length) {
           const last4 = keysRef.current.slice(-4);
