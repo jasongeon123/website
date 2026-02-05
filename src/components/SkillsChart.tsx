@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { skillLevels } from "@/data/content";
 
 const SIZE = 300;
-const CENTER = SIZE / 2;
+const PAD = 45;
+const VIEWBOX = SIZE + PAD * 2;
+const CENTER = VIEWBOX / 2;
 const RADIUS = 110;
 const LEVELS = [0.33, 0.66, 1];
 
@@ -65,7 +67,7 @@ export default function SkillsChart() {
 
   return (
     <div className="skills-chart">
-      <svg ref={ref} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+      <svg ref={ref} viewBox={`0 0 ${VIEWBOX} ${VIEWBOX}`} overflow="visible">
         {/* Grid lines */}
         {LEVELS.map((level) => (
           <polygon
