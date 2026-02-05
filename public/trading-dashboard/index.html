@@ -937,7 +937,7 @@
     </div>
 
     <script>
-        const API_BASE = window.location.origin;
+        const DATA_BASE = window.location.pathname.replace(/\/$/, '') + '/data';
 
         function formatMoney(value) {
             if (value === null || value === undefined) return '--';
@@ -955,7 +955,7 @@
         }
 
         function formatDate(dateStr) {
-            const date = new Date(dateStr);
+            const date = new Date(dateStr + 'T00:00:00');
             return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         }
 
@@ -967,11 +967,10 @@
 
         async function loadFilterStats(filterName) {
             try {
-                const response = await fetch(`${API_BASE}/api/stats?filter=${filterName}`);
+                const response = await fetch(`${DATA_BASE}/stats-${filterName}.json`);
                 const data = await response.json();
                 if (data.error) return;
 
-                // Basic stats
                 document.getElementById(`${filterName}-trades`).textContent = data.overall.total_trades;
                 document.getElementById(`${filterName}-winrate`).textContent = `${data.overall.win_rate}%`;
                 document.getElementById(`${filterName}-winners`).textContent = data.overall.total_winners;
@@ -981,7 +980,6 @@
                 pnlEl.textContent = formatMoney(data.overall.total_pnl);
                 setPnlClass(pnlEl, data.overall.total_pnl);
 
-                // Extended stats
                 const avgPnlEl = document.getElementById(`${filterName}-avgpnl`);
                 avgPnlEl.textContent = formatPercent(data.overall.avg_pnl_pct);
                 setPnlClass(avgPnlEl, data.overall.avg_pnl_pct);
@@ -994,28 +992,24 @@
                 document.getElementById(`${filterName}-worst`).textContent = formatPercent(data.overall.worst_trade_pct);
                 document.getElementById(`${filterName}-avgloss`).textContent = formatPercent(data.overall.avg_loss_pct);
 
-                // Period stats - Today
                 const todayPnlEl = document.getElementById(`${filterName}-today-pnl`);
                 todayPnlEl.textContent = formatMoney(data.today.pnl);
                 setPnlClass(todayPnlEl, data.today.pnl);
                 document.getElementById(`${filterName}-today-trades`).textContent = `${data.today.trades} trades`;
 
-                // Period stats - Week
                 const weekPnlEl = document.getElementById(`${filterName}-week-pnl`);
                 weekPnlEl.textContent = formatMoney(data.week.pnl);
                 setPnlClass(weekPnlEl, data.week.pnl);
                 document.getElementById(`${filterName}-week-trades`).textContent = `${data.week.trades} trades`;
 
-                // Period stats - Month
                 const monthPnlEl = document.getElementById(`${filterName}-month-pnl`);
                 monthPnlEl.textContent = formatMoney(data.month.pnl);
                 setPnlClass(monthPnlEl, data.month.pnl);
                 document.getElementById(`${filterName}-month-trades`).textContent = `${data.month.trades} trades`;
 
-                if (filterName === 'combined') {
-                    const date = new Date();
+                if (filterName === 'combined' && data.last_updated) {
                     document.getElementById('lastUpdated').textContent =
-                        `Last updated ${date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}`;
+                        `Data snapshot: ${data.last_updated}`;
                 }
             } catch (error) {
                 console.error(`Error loading ${filterName} stats:`, error);
@@ -1024,7 +1018,7 @@
 
         async function loadFilterChart(filterName) {
             try {
-                const response = await fetch(`${API_BASE}/api/daily?days=30&filter=${filterName}`);
+                const response = await fetch(`${DATA_BASE}/daily-${filterName}.json`);
                 const data = await response.json();
                 const container = document.getElementById(`${filterName}-chart`);
                 const labelsContainer = document.getElementById(`${filterName}-labels`);
@@ -1050,7 +1044,6 @@
                     `;
                 }).join('');
 
-                // Labels: first, middle, last
                 const first = reversed[0]?.date;
                 const last = reversed[reversed.length - 1]?.date;
                 labelsContainer.innerHTML = `
@@ -1064,7 +1057,7 @@
 
         async function loadFilterTrades(filterName) {
             try {
-                const response = await fetch(`${API_BASE}/api/trades?limit=8&filter=${filterName}`);
+                const response = await fetch(`${DATA_BASE}/trades-${filterName}.json`);
                 const data = await response.json();
                 const container = document.getElementById(`${filterName}-trades-table`);
 
@@ -1104,7 +1097,6 @@
         }
 
         loadAll();
-        setInterval(loadAll, 5 * 60 * 1000);
     </script>
 </body>
 </html>
