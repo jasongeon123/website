@@ -9,7 +9,7 @@ interface HistoryEntry {
 }
 
 const COMMANDS: Record<string, string> = {
-  help: "Available commands: help, about, skills, projects, contact, ls, cd <section>, clear, exit, sudo hire geon\n  (Toggle terminal: Ctrl+Shift+T)",
+  help: "Available commands: help, about, skills, projects, contact, ls, cd <section>, clear, exit, sudo hire geon\n  (Toggle terminal: type -+-+)",
   about:
     "Hey! I'm Geon — a software engineer who loves building things that matter. UCSD grad, ML enthusiast, and currently making 100K+ UPS drivers' lives easier. When I'm not coding, I'm probably losing at card counting (ironic, given I built a trainer for it).",
   contact: `Email: ${personalInfo.email}\nGitHub: ${personalInfo.github}\nLinkedIn: ${personalInfo.linkedin}`,
@@ -65,15 +65,32 @@ export default function Terminal() {
   const bodyRef = useRef<HTMLDivElement>(null);
 
   const close = useCallback(() => setIsOpen(false), []);
+  const keysRef = useRef<string[]>([]);
+  const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
   useEffect(() => {
+    const SEQUENCE = ["-", "+", "-", "+"];
+
     function handleKey(e: KeyboardEvent) {
       const tag = (e.target as HTMLElement).tagName;
-      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      if (tag === "TEXTAREA") return;
+      // Allow terminal's own input but block other page inputs
+      if (tag === "INPUT" && !(e.target as HTMLElement).classList.contains("terminal-input")) return;
 
-      if (e.ctrlKey && e.shiftKey && e.key === "T") {
-        e.preventDefault();
-        setIsOpen((prev) => !prev);
+      if (e.key === "-" || e.key === "+" || e.key === "=") {
+        const key = e.key === "=" ? "+" : e.key;
+        keysRef.current.push(key);
+
+        if (timerRef.current) clearTimeout(timerRef.current);
+        timerRef.current = setTimeout(() => { keysRef.current = []; }, 1500);
+
+        if (keysRef.current.length >= SEQUENCE.length) {
+          const last4 = keysRef.current.slice(-4);
+          if (last4.every((k, i) => k === SEQUENCE[i])) {
+            keysRef.current = [];
+            setIsOpen((prev) => !prev);
+          }
+        }
       }
     }
 
