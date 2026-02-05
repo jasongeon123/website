@@ -604,7 +604,9 @@ section .title {
 }
 
 .projects .serv-content .card.tilt-card {
-  transition: transform 0.15s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .projects .serv-content .card .box {
