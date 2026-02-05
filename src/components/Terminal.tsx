@@ -167,9 +167,15 @@ export default function Terminal() {
       <div className="terminal">
         <div className="terminal-header">
           <div className="terminal-dots">
-            <span className="dot red" onClick={close} />
-            <span className="dot yellow" />
-            <span className="dot green" />
+            <span className="dot red" onClick={close}>
+              <svg viewBox="0 0 12 12"><path d="M3.5 3.5l5 5M8.5 3.5l-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+            </span>
+            <span className="dot yellow" onClick={close}>
+              <svg viewBox="0 0 12 12"><path d="M2.5 6h7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+            </span>
+            <span className="dot green">
+              <svg viewBox="0 0 12 12"><path d="M3 9L6 3l3 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>
+            </span>
           </div>
           <div className="terminal-title">geon@portfolio ~ bash</div>
           <div className="terminal-dots" style={{ visibility: "hidden" }}>

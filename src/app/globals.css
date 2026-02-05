@@ -2264,10 +2264,22 @@ html[data-theme="light"] body {
 
 .terminal-dots .dot.yellow {
   background: #febc2e;
+  cursor: pointer;
 }
 
 .terminal-dots .dot.green {
   background: #28c840;
+}
+
+.terminal-dots .dot svg {
+  width: 8px;
+  height: 8px;
+  display: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.terminal-dots:hover .dot svg {
+  display: block;
 }
 
 .terminal-title {
