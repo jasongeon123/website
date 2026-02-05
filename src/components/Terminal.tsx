@@ -155,9 +155,17 @@ export default function Terminal() {
     setCurrentInput("");
   }
 
-  if (!isOpen) return null;
-
   return (
+    <>
+    <button
+      className="terminal-trigger"
+      onClick={() => setIsOpen((prev) => !prev)}
+      aria-label="Open terminal"
+      title="Open terminal"
+    >
+      &gt;_
+    </button>
+    {isOpen && (
     <div
       className="terminal-overlay"
       onClick={(e) => {
@@ -213,5 +221,7 @@ export default function Terminal() {
         </div>
       </div>
     </div>
+    )}
+    </>
   );
 }

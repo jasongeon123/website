@@ -2206,6 +2206,34 @@ html[data-theme="light"] body {
 }
 
 /* Terminal Easter Egg */
+.terminal-trigger {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.terminal-trigger:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .terminal-overlay {
   position: fixed;
   inset: 0;
