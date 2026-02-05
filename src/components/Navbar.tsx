@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
@@ -30,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
+    <nav className={`navbar ${isSticky ? "sticky" : ""}`} aria-label="Main navigation">
       <div className="maxWidth">
         <div id="logo">
           <a onClick={() => scrollTo("home")} style={{ cursor: "pointer" }}>
@@ -50,9 +49,16 @@ export default function Navbar() {
 
         <div className="nav-right">
           <ThemeToggle />
-          <div className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </div>
+          <button
+            className={`menu-btn ${menuOpen ? "active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </nav>

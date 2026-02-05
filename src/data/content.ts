@@ -47,6 +47,15 @@ export const skills = [
 
 export const skillsDescription = `Full-stack developer with expertise in machine learning and game development. Currently building training solutions at UPS.`;
 
+export const skillLevels = [
+  { name: "Frontend", level: 90 },
+  { name: "Backend", level: 85 },
+  { name: "ML/AI", level: 80 },
+  { name: "DevOps", level: 70 },
+  { name: "Game Dev", level: 75 },
+  { name: "Database", level: 80 },
+];
+
 export interface CaseStudy {
   problem: string;
   solution: string;
@@ -60,6 +69,7 @@ export interface Project {
   icon: string;
   link: string | null;
   tags: string[];
+  screenshot?: string;
   caseStudy?: CaseStudy;
 }
 
@@ -70,6 +80,7 @@ export const projects: Project[] = [
     icon: "FaPaintBrush",
     link: "http://www.geonyoo.com",
     tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    screenshot: "/images/1.png",
     caseStudy: {
       problem: "Needed a fast, visually engaging portfolio that stands out from template-based sites while maintaining excellent performance scores.",
       solution: "Built a custom Next.js site with static export, particle effects in dark mode, animated clouds in light mode, and smooth scroll-snap navigation.",
@@ -89,6 +100,7 @@ export const projects: Project[] = [
     icon: "FaRobot",
     link: "http://www.geonyoo.com/trading-dashboard",
     tags: ["Python", "FastAPI", "Alpaca API", "WebSocket"],
+    screenshot: "/images/10.png",
     caseStudy: {
       problem: "Wanted automated trading signals without paying for expensive cloud hosting or subscription-based alert services.",
       solution: "Built a lightweight Python bot running on a Raspberry Pi that monitors real-time market data via Alpaca's WebSocket API and sends alerts.",
@@ -107,6 +119,7 @@ export const projects: Project[] = [
     icon: "FaCoffee",
     link: "https://ellabeancoffee.com",
     tags: ["Next.js", "Prisma", "Stripe", "NextAuth"],
+    screenshot: "/images/2.png",
     caseStudy: {
       problem: "A local coffee shop needed an online ordering system with inventory management, but commercial solutions were too expensive for a small business.",
       solution: "Built a full-stack e-commerce platform with Stripe payments, NextAuth authentication, and a custom admin dashboard for order and inventory management.",
@@ -125,6 +138,7 @@ export const projects: Project[] = [
     icon: "FaGamepad",
     link: "https://theoddshift.com",
     tags: ["React", "PostgreSQL", "Railway", "Electron"],
+    screenshot: "/images/3.png",
     caseStudy: {
       problem: "Card counting learners lack effective practice tools. Existing apps are either too basic or don't simulate real casino conditions.",
       solution: "Created a progressive training platform that teaches Hi-Lo counting through gamified speed challenges, tracking accuracy and speed over time.",
@@ -143,6 +157,7 @@ export const projects: Project[] = [
     icon: "FaUtensils",
     link: null,
     tags: ["Next.js", "Stripe Connect", "Prisma", "PostgreSQL"],
+    screenshot: "/images/4.png",
     caseStudy: {
       problem: "Splitting bills for group dining is awkward and often unfair. Venmo requests after the fact lead to forgotten payments.",
       solution: "Built a platform where groups pre-commit funds into escrow via Stripe Connect before ordering, ensuring fair cost-splitting upfront.",
@@ -161,6 +176,7 @@ export const projects: Project[] = [
     icon: "FaChartLine",
     link: null,
     tags: ["React", "Flask", "Isolation Forests", "Python"],
+    screenshot: "/images/6.png",
     caseStudy: {
       problem: "Retail investors miss significant price movements because they can't monitor stocks 24/7. Traditional alerts only support simple threshold triggers.",
       solution: "Built an ML-powered anomaly detection system using Isolation Forests to identify unusual price movements and notify users in real-time.",
@@ -179,6 +195,7 @@ export const projects: Project[] = [
     icon: "FaTruck",
     link: null,
     tags: ["React", "Node.js", "SQL", "Jenkins"],
+    screenshot: "/images/7.png",
     caseStudy: {
       problem: "UPS needed to digitize driver training for 100K+ employees, replacing outdated paper-based modules with an interactive learning platform.",
       solution: "Architected and built a full-stack LMS with React frontend, Node.js API, and SQL database, deployed via Jenkins CI/CD pipeline.",
@@ -197,6 +214,7 @@ export const projects: Project[] = [
     icon: "FaVrCardboard",
     link: null,
     tags: ["Unity", "C#", "ARCore", "Vuforia"],
+    screenshot: "/images/8.png",
     caseStudy: {
       problem: "Traditional classroom training for package car operations was time-consuming and couldn't simulate real-world scenarios effectively.",
       solution: "Developed an AR application using Unity and ARCore/Vuforia that overlays training instructions onto real vehicles, enabling hands-on learning.",
@@ -215,6 +233,7 @@ export const projects: Project[] = [
     icon: "FaBrain",
     link: null,
     tags: ["Python", "TensorFlow", "PyTorch", "ML"],
+    screenshot: "/images/9.png",
     caseStudy: {
       problem: "UPS supply chain routing relied on rule-based heuristics that couldn't adapt to changing conditions or learn from historical patterns.",
       solution: "Implemented observational learning neural networks that analyze historical routing data to suggest optimized delivery sequences.",

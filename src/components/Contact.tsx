@@ -94,7 +94,9 @@ export default function Contact() {
               <form onSubmit={handleSubmit}>
                 <div className="fields">
                   <div className="field name">
+                    <label htmlFor="contact-name" className="sr-only">Name</label>
                     <input
+                      id="contact-name"
                       type="text"
                       placeholder="Name"
                       required
@@ -103,7 +105,9 @@ export default function Contact() {
                     />
                   </div>
                   <div className="field email">
+                    <label htmlFor="contact-email" className="sr-only">Email</label>
                     <input
+                      id="contact-email"
                       type="email"
                       placeholder="Email"
                       required
@@ -113,7 +117,9 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="field">
+                  <label htmlFor="contact-subject" className="sr-only">Subject</label>
                   <input
+                    id="contact-subject"
                     type="text"
                     placeholder="Subject"
                     required
@@ -122,7 +128,9 @@ export default function Contact() {
                   />
                 </div>
                 <div className="field textarea">
+                  <label htmlFor="contact-message" className="sr-only">Message</label>
                   <textarea
+                    id="contact-message"
                     placeholder="Message.."
                     required
                     value={form.message}

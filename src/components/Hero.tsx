@@ -7,9 +7,21 @@ import { loadSlim } from "@tsparticles/slim";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { personalInfo, typingStrings } from "@/data/content";
 
+function getGreeting() {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good morning";
+  if (hour < 18) return "Good afternoon";
+  return "Good evening";
+}
+
 export default function Hero() {
   const typedRef = useRef<HTMLSpanElement>(null);
   const [particlesReady, setParticlesReady] = useState(false);
+  const [greeting, setGreeting] = useState("Hello");
+
+  useEffect(() => {
+    setGreeting(getGreeting());
+  }, []);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -62,7 +74,7 @@ export default function Hero() {
             </div>
           )}
 
-          <div className="text1">Hello, my name is</div>
+          <div className="text1">{greeting}, my name is</div>
           <h1 className="text2">{personalInfo.name}</h1>
           <div className="text3">
             And I&apos;m a <span ref={typedRef}></span>

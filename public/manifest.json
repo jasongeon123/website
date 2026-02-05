@@ -1,0 +1,21 @@
+{
+  "name": "Geon Yoo | Software Engineer Portfolio",
+  "short_name": "Geon Yoo",
+  "description": "Software Engineer portfolio showcasing projects, experience, and skills.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#556DC8",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/images/headshots.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}

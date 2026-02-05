@@ -2,6 +2,7 @@
 
 import { skills, skillsDescription } from "@/data/content";
 import ScrollReveal from "./ScrollReveal";
+import SkillsChart from "./SkillsChart";
 
 const categoryToTags: Record<string, string[]> = {
   frontend: ["react", "electron"],
@@ -46,6 +47,7 @@ export default function Skills() {
             <div className="column left">
               <div className="text">My creative skills & experiences.</div>
               <p>{skillsDescription}</p>
+              <SkillsChart />
             </div>
           </ScrollReveal>
 

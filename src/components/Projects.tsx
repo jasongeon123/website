@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { FaPaintBrush, FaChartLine, FaCode, FaTruck, FaVrCardboard, FaBrain, FaCoffee, FaGamepad, FaRobot, FaUtensils } from "react-icons/fa";
 import { projects } from "@/data/content";
 import type { Project } from "@/data/content";
@@ -39,6 +39,22 @@ const icons: Record<string, React.ReactNode> = {
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -8;
+    const rotateY = ((x - centerX) / centerX) * 8;
+    card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  }, []);
+
+  const handleMouseLeave = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    e.currentTarget.style.transform = "";
+  }, []);
+
   return (
     <section className="projects" id="projects">
       <div className="maxWidth">
@@ -48,8 +64,10 @@ export default function Projects() {
           {projects.map((project, i) => (
             <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
               <div
-                className="card"
+                className="card tilt-card"
                 onClick={() => setSelectedProject(project)}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => {

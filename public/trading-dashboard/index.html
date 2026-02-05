@@ -601,6 +601,62 @@
         }
 
         .footer span { color: var(--text-secondary); }
+
+        /* Skeleton Loading */
+        .skeleton {
+            background: var(--bg-elevated);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skeleton::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+            animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .skeleton-text {
+            height: 14px;
+            width: 60%;
+            margin: 4px 0;
+        }
+
+        .skeleton-number {
+            height: 32px;
+            width: 80px;
+        }
+
+        .skeleton-row {
+            display: flex;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .skeleton-row > span {
+            height: 14px;
+            flex: 1;
+        }
+
+        .skeleton-trades {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .empty-state.skeleton-loading {
+            display: flex;
+            flex-direction: column;
+            color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -615,7 +671,7 @@
                 <span>Live</span>
             </div>
             <h1>Trading Performance</h1>
-            <p id="lastUpdated">Loading performance data...</p>
+            <p id="lastUpdated"><span class="skeleton skeleton-text" style="display:inline-block;width:180px;height:14px;vertical-align:middle"></span></p>
         </header>
 
         <!-- Strategy Cards -->
@@ -905,7 +961,7 @@
                     Combined
                 </div>
                 <div class="trades-list" id="combined-trades-table">
-                    <div class="empty-state">Loading trades...</div>
+                    <div class="empty-state skeleton-loading"><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div></div>
                 </div>
             </div>
 
@@ -915,7 +971,7 @@
                     Long Only
                 </div>
                 <div class="trades-list" id="buy-trades-table">
-                    <div class="empty-state">Loading trades...</div>
+                    <div class="empty-state skeleton-loading"><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div></div>
                 </div>
             </div>
 
@@ -925,7 +981,7 @@
                     Short Only
                 </div>
                 <div class="trades-list" id="sell-trades-table">
-                    <div class="empty-state">Loading trades...</div>
+                    <div class="empty-state skeleton-loading"><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div><div class="skeleton-row"><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span></div></div>
                 </div>
             </div>
         </div>

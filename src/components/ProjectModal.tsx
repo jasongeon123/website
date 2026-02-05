@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 import type { Project } from "@/data/content";
 
@@ -19,11 +20,14 @@ export default function ProjectModal({
   onClose,
   getTagClass,
 }: ProjectModalProps) {
+  const closeRef = useRef<HTMLButtonElement>(null);
+
   useEffect(() => {
     if (!isOpen) return;
 
     const original = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
 
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape") onClose();
@@ -47,19 +51,31 @@ export default function ProjectModal({
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="project-modal">
+      <div className="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div className="project-modal-header">
           <div className="project-modal-title">
             {icon}
-            <h3>{project.title}</h3>
+            <h3 id="modal-title">{project.title}</h3>
           </div>
-          <button className="project-modal-close" onClick={onClose} aria-label="Close">
+          <button ref={closeRef} className="project-modal-close" onClick={onClose} aria-label="Close">
             <FaTimes />
           </button>
         </div>
 
         <div className="project-modal-body">
           <p className="project-modal-description">{project.description}</p>
+
+          {project.screenshot && (
+            <div className="project-modal-screenshot">
+              <Image
+                src={project.screenshot}
+                alt={project.title}
+                width={650}
+                height={400}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+          )}
 
           {cs && (
             <>

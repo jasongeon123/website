@@ -10,12 +10,17 @@ import Clouds from "@/components/Clouds";
 import Preloader from "@/components/Preloader";
 import SectionNavigator from "@/components/SectionNavigator";
 import Terminal from "@/components/Terminal";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export default function Home() {
   return (
     <>
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
       <Preloader>
-        <main>
+        <main id="main-content">
+          <ScrollProgress />
           <Clouds />
           <Navbar />
           <Hero />
