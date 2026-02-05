@@ -1,8 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import { FaPaintBrush, FaChartLine, FaCode, FaTruck, FaVrCardboard, FaBrain, FaCoffee, FaGamepad, FaRobot, FaUtensils } from "react-icons/fa";
 import { projects } from "@/data/content";
+import type { Project } from "@/data/content";
 import ScrollReveal from "./ScrollReveal";
+import ProjectModal from "./ProjectModal";
 
-function getTagClass(tag: string) {
+export function getTagClass(tag: string) {
   const t = tag.toLowerCase();
 
   if (t.includes("react") || t.includes("next") || t.includes("typescript") || t.includes("tailwind")) return "react";
@@ -32,42 +37,56 @@ const icons: Record<string, React.ReactNode> = {
 };
 
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <section className="projects" id="projects">
       <div className="maxWidth">
         <h2 className="title">Projects</h2>
 
         <div className="serv-content">
-          {projects.map((project, i) => {
-            const content = (
-              <div className="box">
-                {icons[project.icon]}
-                <div className="text">{project.title}</div>
-                <p>{project.description}</p>
-                {project.tags && (
-                  <div className="tags">
-                    {project.tags.map((tag, j) => (
-                      <span key={j} className={`tag ${getTagClass(tag)}`}>{tag}</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            );
-
-            return (
-              <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-                <div className="card">
-                  {project.link ? (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      {content}
-                    </a>
-                  ) : content}
+          {projects.map((project, i) => (
+            <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
+              <div
+                className="card"
+                onClick={() => setSelectedProject(project)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setSelectedProject(project);
+                  }
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="box">
+                  {icons[project.icon]}
+                  <div className="text">{project.title}</div>
+                  <p>{project.description}</p>
+                  {project.tags && (
+                    <div className="tags">
+                      {project.tags.map((tag, j) => (
+                        <span key={j} className={`tag ${getTagClass(tag)}`}>{tag}</span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </ScrollReveal>
-            );
-          })}
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
+
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          icon={icons[selectedProject.icon]}
+          isOpen={!!selectedProject}
+          onClose={() => setSelectedProject(null)}
+          getTagClass={getTagClass}
+        />
+      )}
     </section>
   );
 }

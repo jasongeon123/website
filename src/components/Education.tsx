@@ -1,4 +1,4 @@
-import { FaGraduationCap } from "react-icons/fa";
+import Image from "next/image";
 import { education } from "@/data/content";
 
 export default function Education() {
@@ -10,8 +10,13 @@ export default function Education() {
         <div className="education-content">
           {education.map((edu, index) => (
             <div key={index} className="education-card">
-              <div className="education-icon">
-                <FaGraduationCap />
+              <div className="education-logo">
+                <Image
+                  src={edu.logo}
+                  alt={`${edu.school} logo`}
+                  width={60}
+                  height={60}
+                />
               </div>
               <div className="education-info">
                 <h3>{edu.school}</h3>

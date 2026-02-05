@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Clouds from "@/components/Clouds";
 import Preloader from "@/components/Preloader";
 import SectionNavigator from "@/components/SectionNavigator";
+import Terminal from "@/components/Terminal";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
         <Footer />
         <SectionNavigator />
+        <Terminal />
       </main>
     </Preloader>
   );

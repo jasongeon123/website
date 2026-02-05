@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Ubuntu } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -32,6 +34,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${poppins.variable} ${ubuntu.variable} antialiased`} suppressHydrationWarning>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
