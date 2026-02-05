@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "sync-dashboard": "cp ../trading-alert-bot/public_dashboard/index.html public/trading-dashboard/index.html",
+    "predev": "npm run sync-dashboard",
+    "prebuild": "npm run sync-dashboard",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
