@@ -207,11 +207,9 @@
 @keyframes staggerFadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -307,12 +305,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
-  pointer-events: none;
-}
-
-section {
   z-index: 1;
+  pointer-events: none;
 }
 
 .home {
