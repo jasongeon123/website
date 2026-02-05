@@ -2119,12 +2119,13 @@ html[data-theme="light"] body {
 .resume-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 99998;
   padding: 40px;
+  animation: modalFadeIn 0.2s ease;
 }
 
 .resume-modal {
@@ -2136,6 +2137,8 @@ html[data-theme="light"] body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: modalSlideUp 0.3s ease;
 }
 
 .resume-modal-header {
