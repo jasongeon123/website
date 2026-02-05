@@ -9,7 +9,7 @@ interface HistoryEntry {
 }
 
 const COMMANDS: Record<string, string> = {
-  help: "Available commands: help, about, skills, projects, contact, ls, cd <section>, clear, exit, sudo hire geon",
+  help: "Available commands: help, about, skills, projects, contact, ls, cd <section>, clear, exit, sudo hire geon\n  (Toggle terminal: Ctrl+Shift+T)",
   about:
     "Hey! I'm Geon — a software engineer who loves building things that matter. UCSD grad, ML enthusiast, and currently making 100K+ UPS drivers' lives easier. When I'm not coding, I'm probably losing at card counting (ironic, given I built a trainer for it).",
   contact: `Email: ${personalInfo.email}\nGitHub: ${personalInfo.github}\nLinkedIn: ${personalInfo.linkedin}`,
@@ -71,7 +71,7 @@ export default function Terminal() {
       const tag = (e.target as HTMLElement).tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
 
-      if (e.key === "`") {
+      if (e.ctrlKey && e.shiftKey && e.key === "T") {
         e.preventDefault();
         setIsOpen((prev) => !prev);
       }
