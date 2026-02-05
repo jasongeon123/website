@@ -1,8 +1,27 @@
+"use client";
+
+import { useCallback } from "react";
 import Image from "next/image";
 import { experiences } from "@/data/content";
 import ScrollReveal from "./ScrollReveal";
 
 export default function Experience() {
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -8;
+    const rotateY = ((x - centerX) / centerX) * 8;
+    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(0)`;
+  }, []);
+
+  const handleMouseLeave = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.transform = "";
+  }, []);
+
   return (
     <section className="experience" id="experience">
       <div className="maxWidth">
@@ -11,7 +30,7 @@ export default function Experience() {
         <div className="serv-content">
           {experiences.map((exp, i) => (
             <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-              <a href={exp.link} target="_blank" rel="noopener noreferrer" className="card">
+              <a href={exp.link} target="_blank" rel="noopener noreferrer" className="card tilt-card" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                 <div className="box">
                   <Image
                     src={exp.logo}

@@ -954,7 +954,12 @@ a {
 
 .experience .serv-content .card:hover {
   border-color: var(--accent);
-  transform: translateY(-5px);
+}
+
+.experience .serv-content .card.tilt-card {
+  transition: transform 0.2s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .experience ul {
