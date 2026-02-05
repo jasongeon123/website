@@ -50,6 +50,22 @@
         }
 
         /* Header */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .back-btn:hover {
+            color: var(--text-primary);
+        }
+
         .header {
             text-align: center;
             margin-bottom: 48px;
@@ -579,6 +595,7 @@
 <body>
     <div class="container">
         <header class="header">
+            <a href="/" class="back-btn">&larr; Back to Portfolio</a>
             <div class="header-badge">
                 <span class="dot"></span>
                 <span>Live</span>
